@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<group>
+  <id>test.id</id>
+  <key>test.key</key>
+  <converter>test.converter</converter>
+  <params>
+    <string>param000</string>
+    <long>14</long>
+  </params>
+</group>

@@ -1,0 +1,103 @@
+{
+    "origSourceTable": {
+        "Age": {
+            "name": "Age",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "性别",
+            "nullable": true
+        },
+        "NAME": {
+            "name": "NAME",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "姓名",
+            "nullable": true
+        },
+        "SEX": {
+            "name": "SEX",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "",
+            "nullable": true
+        },
+        "ID": {
+            "name": "ID",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "",
+            "nullable": true
+        }
+    },
+    "origTargetTable": {
+        "P_AGE": {
+            "name": "P_AGE",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "年龄",
+            "nullable": true
+        },
+        "P_NAME": {
+            "name": "P_NAME",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "姓名",
+            "nullable": true
+        },
+        "SEX": {
+            "name": "SEX",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "",
+            "nullable": true
+        },
+        "ID": {
+            "name": "ID",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "",
+            "nullable": true
+        }
+    },
+    "matchCols": {
+        "{\"name\":\"ID\",\"type\":\"VARCHAR2\",\"clazz\":\"java.lang.String\",\"desc\":\"发病日期\",\"nullable\":false}": {
+            "name": "ID",
+            "type": "VARCHAR2",
+            "clazz": "java.lang.String",
+            "desc": "首次出现症状日期",
+            "nullable": true
+        },
+        "{\"name\":\"NAME\",\"type\":\"VARCHAR2\",\"clazz\":\"java.lang.String\",\"desc\":\"具体的其他职业信息\",\"nullable\":true}": {
+            "name": "P_NAME",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "其他职业描述:",
+            "nullable": true
+        },
+        "{\"name\":\"SEX\",\"type\":\"VARCHAR2\",\"clazz\":\"java.lang.String\",\"desc\":\"病例分类2,0-未分类,1-急性病,2-慢性病\",\"nullable\":true}": {
+            "name": "SEX",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "传染病发病类别代码:1.急性 2.慢性",
+            "nullable": true
+        },
+        "{\"name\":\"Age\",\"type\":\"VARCHAR2\",\"clazz\":\"java.lang.String\",\"desc\":\"病例分类，1-临床诊断病例、2-实验室诊断病例、3-疑似病例、4-病原携带者、5-阳性检测，码表-card_casetype\",\"nullable\":true}": {
+            "name": "P_AGE",
+            "type": "VARCHAR",
+            "clazz": "java.lang.String",
+            "desc": "诊断状态代码:取值：诊断状态代码CV05.01.002",
+            "nullable": true
+        }
+    },
+    "sourceUnmatchedCols": {
+    },
+    "targetUnmatchedCols": {
+        "LASTUPTIME": {
+            "name": "LASTUPTIME",
+            "type": "DATETIME",
+            "clazz": "java.sql.Timestamp",
+            "desc": "最终修改日期:默认值：当前日期",
+            "nullable": true
+        }
+    }
+}

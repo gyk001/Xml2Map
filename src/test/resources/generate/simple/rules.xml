@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<group>
+  <rules>
+  	<rule>
+	  <key>P_AGE</key>
+	  <converter>name</converter>
+	  <params>
+	  	<string>Age</string>
+	  </params>
+	</rule>
+	<rule>
+	  <key>P_NAME</key>
+  	  <converter>name</converter>
+	  <params>
+	  	<string>NAME</string>
+	  </params>
+	</rule>
+	<rule>
+	  <key>SEX</key>
+	  <converter>nope</converter>
+	</rule>
+	<rule>
+	  <key>ID</key>
+	  <converter>nope</converter>
+	</rule>
+  </rules>
+</group>

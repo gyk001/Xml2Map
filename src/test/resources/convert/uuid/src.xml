@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<group>
+  <id>test.allsame</id>
+  <rules>
+	<rule>
+	  <key>U1</key>
+	  <converter>uuid</converter>
+	</rule>
+	<rule>
+	  <key>U2</key>
+	  <converter>uuid</converter>
+	</rule>
+	<rule>
+	  <key>U3</key>
+	  <converter>uuid</converter>
+	</rule>
+	<rule>
+	  <key>U4</key>
+	  <converter>uuid</converter>
+	</rule>
+  </rules>
+</group>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rule>
+  <id>p.id</id>
+  <key>p.key</key>
+  <converter>p.converter</converter>
+  <params>
+    <string>param000</string>
+    <long>14</long>
+    <rule>
+	  <id>test.id</id>
+	  <key>test.key</key>
+	  <converter>test.converter</converter>
+	  <params>
+	    <string>param000</string>
+	    <long>14</long>
+	  </params>
+	</rule>
+  </params>
+</rule>

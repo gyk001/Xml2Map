@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<group>
+  <id>test.allsame</id>
+  <rules>
+  	<rule>
+	  <key>P_AGE</key>
+	  <converter>name</converter>
+	  <params>
+	  	<string>Age</string>
+	  </params>
+	</rule>
+	<rule>
+	  <key>P_NAME</key>
+  	  <converter>name</converter>
+	  <params>
+	  	<string>NAME</string>
+	  </params>
+	</rule>
+	<rule>
+	  <key>SEX</key>
+	</rule>
+	<rule>
+	  <key>ID</key>
+	</rule>
+  </rules>
+</group>

@@ -1,0 +1,7 @@
+{
+    "ID" : "demo_001",
+    "NAME" : "张三",
+	"SCHOOL_NAME": "北大",
+	"SCHOOL_LEVEL": "硕士",
+	"SCHOOL_SUBJECT": "软件工程" 
+ }

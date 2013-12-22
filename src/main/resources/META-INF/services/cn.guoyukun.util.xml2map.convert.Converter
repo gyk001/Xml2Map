@@ -1,0 +1,9 @@
+#cn.guoyukun.util.xml2map.convert.impl.NopeConverter
+#cn.guoyukun.util.xml2map.convert.impl.NameConverter
+#cn.guoyukun.util.xml2map.convert.impl.TypeNameConverter
+#cn.guoyukun.util.xml2map.convert.impl.FlatConverter
+#cn.guoyukun.util.xml2map.convert.impl.HierarchyConverter
+cn.guoyukun.util.xml2map.convert.impl.ConstConverter
+cn.guoyukun.util.xml2map.convert.impl.UUIDConverter
+cn.guoyukun.util.xml2map.convert.impl.XPathConverter
+cn.guoyukun.util.xml2map.convert.impl.SlotXPathConverter

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<group>
+  <id>test.allsame</id>
+  <rules>
+  	<rule>
+	  <key>NAME</key>
+	  <converter>nope</converter>
+	</rule>
+	<rule>
+	  <key>ID</key>
+  	  <converter>nope</converter>
+	</rule>
+	<rule>
+	  <key>SCHOOL_NAME</key>
+	  <converter>flat</converter>
+	  <params>
+	  	<string>SCHOOL.NAME</string>
+	  </params>
+	</rule>
+	<rule>
+	  <key>SCHOOL_LEVEL</key>
+	  <converter>flat</converter>
+	  <params>
+	  	<string>SCHOOL.LEVEL</string>
+	  </params>
+	</rule>
+		<rule>
+	  <key>SCHOOL_SUBJECT</key>
+	  <converter>flat</converter>
+	  <params>
+	  	<string>SCHOOL.SUBJECT</string>
+	  </params>
+	</rule>
+  </rules>
+</group>

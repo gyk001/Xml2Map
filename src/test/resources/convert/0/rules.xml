@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group>
+  <id>test.allsame</id>
+  <rules>
+  	<rule>
+  		<key>TEST_DATE</key>
+  		<converter>xpath</converter>
+  		<params>
+  			<string>/SubmitSoapRequest/mrn/text()</string>
+  		</params>
+  	</rule>
+  	<rule>
+  		<key>TESTING_ORG_NAME</key>
+  		<converter>xpath</converter>
+  		<params>
+  			<string>/SubmitSoapRequest/authority/text()</string>
+  		</params>
+  	</rule>
+  	<rule>
+  		<key>HEALTH_PROBLEM_DN</key>
+  		<converter>xpath</converter>
+  		<params>
+  			<string>/SubmitSoapRequest/subjective/subjectiveInfo/text()</string>
+  		</params>
+  	</rule>  	  	
+  	<rule>
+	  <key>UPLOAD_ORG_CODE</key>
+	  <converter>const</converter>
+	  <params>
+	  	<string>yuxin</string>
+	  </params>
+	</rule>
+	<rule>
+		<key>ID</key>
+		<converter>const</converter>
+		<params>
+			<string>pk-uuid</string>
+		</params>
+	</rule>
+	<rule>
+	  <key>NAME</key>
+	  <converter>const</converter>
+	  <params>
+	  	<string>杨秀兰</string>
+	  </params>
+	</rule>
+<rule>
+    <key>BODY_HEIGHT</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>BODY_WEIGHT</key>
+    <converter>slot</converter>
+    <params>
+      <string>体重</string>
+    </params>
+  </rule>
+<rule>
+    <key>BODY_TEMPERATURE</key>
+    <converter>slot</converter>
+    <params>
+      <string>体温</string>
+    </params>
+  </rule>
+<rule>
+    <key>PULSE_RATE</key>
+    <converter>slot</converter>
+    <params>
+      <string>脉搏</string>
+    </params>
+  </rule>
+<rule>
+    <key>BREATHE_FREQ</key>
+    <converter>slot</converter>
+    <params>
+      <string>呼吸</string>
+    </params>
+  </rule>
+<rule>
+    <key>LEFT_SBP</key>
+    <converter>slot</converter>
+    <params>
+      <string>收缩压</string>
+    </params>
+  </rule>
+<rule>
+    <key>LEFT_DBP</key>
+    <converter>slot</converter>
+    <params>
+      <string>舒张压</string>
+    </params>
+  </rule>
+  <!--
+<rule>
+    <key>一般情况</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+  -->
+<rule>
+    <key>OTHER_SKIN_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>皮肤粘膜</string>
+    </params>
+  </rule>
+<rule>
+    <key>OTHER_LN_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>淋巴结</string>
+    </params>
+  </rule>
+  <!--
+<rule>
+    <key>结膜</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>角膜</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+-->
+<rule>
+    <key>OTHER_SCLERA_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>巩膜</string>
+    </params>
+  </rule>
+  <!--
+<rule>
+    <key>瞳孔</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+-->
+<rule>
+    <key>AUDI_VALUE</key>
+    <converter>slot</converter>
+    <params>
+      <string>耳</string>
+    </params>
+  </rule>
+  <!--
+<rule>
+    <key>鼻</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>舌</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+-->
+<rule>
+    <key>PHARYNX_VALUE</key>
+    <converter>slot</converter>
+    <params>
+      <string>咽</string>
+    </params>
+  </rule>
+  <!--
+<rule>
+    <key>双侧扁桃体</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>支气管</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>颈静脉</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>颈动脉搏动</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+-->
+<rule>
+    <key>OXG_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>血管杂音</string>
+    </params>
+  </rule>
+  <!--
+<rule>
+    <key>甲状腺</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>胸廓</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+-->
+<rule>
+    <key>OTHER_BREAST_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>乳房</string>
+    </params>
+  </rule>
+<rule>
+    <key>LUNG_ABC_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>肺</string>
+    </params>
+  </rule>
+<rule>
+    <key>OXZ_DESCR</key>
+    <converter>slot</converter>
+    <params>
+      <string>心脏</string>
+    </params>
+  </rule>
+<rule>
+    <key>DRE_RESULT_DN</key>
+    <converter>slot</converter>
+    <params>
+      <string>肛门</string>
+    </params>
+  </rule>
+<!--
+<rule>
+    <key>脊柱</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>生理反射</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+<rule>
+    <key>病理反射</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+-->
+<rule>
+    <key>BBV_DIS_VALUE</key>
+    <converter>slot</converter>
+    <params>
+      <string>脑膜刺激征</string>
+    </params>
+  </rule>
+<rule>
+    <key>CNDRUG_CON_RESULT_VALUE</key>
+    <converter>slot</converter>
+    <params>
+      <string>中医体质辨识</string>
+    </params>
+  </rule>
+  
+<rule>
+    <key>CREATETIME</key>
+    <converter>xpath</converter>
+    <params>
+      <string>/SubmitSoapRequest/objective/dateCreated/text()</string>
+    </params>
+  </rule>
+  
+<rule>
+    <key>OTHER_EXAMINATION_RESULT</key>
+    <converter>xpath</converter>
+    <params>
+      <string>/SubmitSoapRequest/assessment/diagnosis/diagInfo/text()</string>
+    </params>
+  </rule>
+<rule>
+    <key>TESTER_NAME</key>
+    <converter>xpath</converter>
+    <params>
+      <string>/SubmitSoapRequest/assessment/doctorName/text()</string>
+    </params>
+  </rule>
+  <!-- 
+<rule>
+    <key>2012-09-17</key>
+    <converter>slot</converter>
+    <params>
+      <string>身高</string>
+    </params>
+  </rule>
+  -->
+<rule>
+    <key>FIELD_PK_FK</key>
+    <converter>xpath</converter>
+    <params>
+      <string>/SubmitSoapRequest/sourcePatientID/text()</string>
+    </params>
+  </rule>
+<rule>
+    <key>FIELD_PK</key>
+    <converter>const</converter>
+    <params>
+      <string>UUID-pk-fk</string>
+    </params>
+  </rule>
+  </rules>
+</group>
