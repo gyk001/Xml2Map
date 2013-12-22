@@ -23,7 +23,7 @@ public class XmlLoadUtil {
 	private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
 	static public Document loadXmlFromResource(String path) throws Exception {
-		InputStream is = XmlLoadUtilTest.class.getResourceAsStream(path);
+		InputStream is = XmlLoadUtil.class.getResourceAsStream(path);
 		
 		try {
 			Document dataXml = SAX_BUILDER.build(new InputStreamReader(is, "UTF-8"));
