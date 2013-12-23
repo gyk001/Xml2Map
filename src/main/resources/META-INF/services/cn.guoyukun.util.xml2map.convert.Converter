@@ -7,3 +7,4 @@ cn.guoyukun.util.xml2map.convert.impl.ConstConverter
 cn.guoyukun.util.xml2map.convert.impl.UUIDConverter
 cn.guoyukun.util.xml2map.convert.impl.XPathConverter
 cn.guoyukun.util.xml2map.convert.impl.SlotXPathConverter
+cn.guoyukun.util.xml2map.convert.impl.GroupItemXPathConverter

@@ -48,7 +48,8 @@ public class ConvertUtilTest {
 				{ "flat" },
 				{ "hierarchy" },
 				*/
-				{"0"}
+				{"0"},
+				{"1"}
 			};
 	}
 
