@@ -72,7 +72,7 @@ insert into t_dm_diabetfol_rec(
 	'薛楠',   -- FOLLOWUP_DOCTOR_NAME,
 	to_date('2013-04-04','yyyy-MM-dd'),   -- CUR_FOLLOWUP_DATE, 
 	'UUID_ID_FK',   -- ID_FK
-	'目前血糖控制良好，体重仍超标'
+	'目前血糖控制良好，体重仍超标。'   -- ASSIST_OTHER_DESCR
 );
 
 insert into t_dm_diabetfol_rec_drug(
@@ -85,14 +85,14 @@ insert into t_dm_diabetfol_rec_drug(
   DOSE_SINGLE,
   ID_FK
 ) values(
-	'diabet_rec_drug3',
-	'diebetfeldrug003',
-	'diabetfolrec003',
-  to_date('2012-10-26','yyyy-MM-dd'),
-	'二甲双胍',
-	'3/日',
-	500,
-	'diabet_rec3'
+'UUID_ID',   --   ID,
+'UUID_FIELD_PK',   --   FIELD_PK,
+'UUID_FIELD_PK_FK',   --   FIELD_PK_FK,
+  to_date('2012-04-04','yyyy-MM-dd'),   --   CREATETIME
+	'二甲双胍',   --   DRUG_NAME
+	'3/日',   --   DRUG_USAGE
+	500,   --   DOSE_SINGLE
+	'UUID_ID_FK'   --   ID_FK
 )
 
 

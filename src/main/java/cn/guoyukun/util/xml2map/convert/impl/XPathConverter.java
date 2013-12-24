@@ -50,7 +50,7 @@ public class XPathConverter implements Converter{
 				return ((Content) obj).getValue();
 			}
 		}
-		return "XXXX";
+		return "null";
 	}
 
 	@Override

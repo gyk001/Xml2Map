@@ -48,6 +48,7 @@ public class RuleLoadUtil {
 		XStream xstream = new XStream();
 		Annotations.configureAliases(xstream, RuleGroup.class);
 		Annotations.configureAliases(xstream, Rule.class);
+		Annotations.configureAliases(xstream, Rule.Decorator.class);
 		return xstream;
 	}
 	

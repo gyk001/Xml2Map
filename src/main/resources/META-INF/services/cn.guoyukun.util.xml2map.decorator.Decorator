@@ -1,0 +1,3 @@
+cn.guoyukun.util.xml2map.decorator.impl.RegexDecorator
+cn.guoyukun.util.xml2map.decorator.impl.ItemDecorator
+cn.guoyukun.util.xml2map.decorator.impl.RegexItemDecorator

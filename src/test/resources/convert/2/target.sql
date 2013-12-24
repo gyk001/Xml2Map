@@ -70,7 +70,8 @@ insert into t_dm_diabetfol_rec(
 	'无',   -- DRUG_SIDE_EFF_DESCR,
 	'薛楠',   -- FOLLOWUP_DOCTOR_NAME,
 	to_date('2013-01-04','yyyy-MM-dd'),   -- CUR_FOLLOWUP_DATE,
-	'UUID_ID_FK'   -- ID_FK
+	'UUID_ID_FK',   -- ID_FK
+	'null'   -- ASSIST_OTHER_DESCR
 )
 
 

@@ -10,6 +10,8 @@ import cn.guoyukun.util.xml2map.ConvertContext;
 import cn.guoyukun.util.xml2map.ConvertException;
 import cn.guoyukun.util.xml2map.convert.Converter;
 import cn.guoyukun.util.xml2map.convert.ConverterHolder;
+import cn.guoyukun.util.xml2map.decorator.Decorator;
+import cn.guoyukun.util.xml2map.decorator.DecoratorHolder;
 import cn.guoyukun.util.xml2map.rule.Rule;
 import cn.guoyukun.util.xml2map.rule.RuleGroup;
 
@@ -61,6 +63,13 @@ public class ConvertUtil {
 					+ converter.getMinParamsCount() + "个，实际有" + paramsCount + "个");
 		}
 		Object value = converter.convert(cxt, rule);
+		Rule.Decorator[] decorators = rule.getDecorators();
+		if(decorators!=null){
+			for (Rule.Decorator decorator: decorators){
+				Decorator d = DecoratorHolder.getDecorator(decorator.getType());
+				value = d.decorate(value, decorator.getParams());
+			}
+		}
 		return value;
 	}
 }
