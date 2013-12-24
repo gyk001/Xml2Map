@@ -50,7 +50,8 @@ public class ConvertUtilTest {
 				{"0"},
 				{"1"},
 				 */
-				{"2"}
+				{"2"},
+				{"3"}
 			};
 	}
 

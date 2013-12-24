@@ -43,11 +43,12 @@ insert into t_dm_diabetfol_rec(
   DRUG_SIDE_EFF_DESCR,
   FOLLOWUP_DOCTOR_NAME,
   CUR_FOLLOWUP_DATE,
-  ID_FK
+  ID_FK,
+  ASSIST_OTHER_DESCR
 ) values(
-'${ID}',   -- ID,  TODO:
-'${FIELD_PK}',   -- FIELD_PK,  TODO:
-'${FIELD_PK_FK}',   -- FIELD_PK_FK,  TODO:
+'UUID_ID',   -- ID,  TODO:
+'UUID_FIELD_PK',   -- FIELD_PK,  TODO:
+'UUID_FIELD_PK_FK',   -- FIELD_PK_FK,  TODO:
 '${OTHER_SYMPTOM_DESC}',   -- OTHER_SYMPTOM_DESC,  TODO:
   ${SBP},   -- SBP,
   ${DBP},   -- DBP,

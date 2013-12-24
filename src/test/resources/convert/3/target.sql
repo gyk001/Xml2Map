@@ -4,9 +4,9 @@ insert into T_DM_DIABETFOL(
   NAME,
   FIELD_PK,
   FIELD_PK_FK
-) values(
+  ) values(
   'UUID_ID',   --  ID,   TODO:
-  to_date('2013-01-04','yyyy-MM-dd'),   --   CREATETIME,
+  to_date('2013-04-04','yyyy-MM-dd'),   --   CREATETIME,
   '杨秀兰',   --   NAME, TODO:
   'UUID_FIELD_PK',   --   FIELD_PK, TODO:
   'UUID_FIELD_PK_FK'   --   FIELD_PK_FK : TODO
@@ -43,12 +43,13 @@ insert into t_dm_diabetfol_rec(
   DRUG_SIDE_EFF_DESCR,
   FOLLOWUP_DOCTOR_NAME,
   CUR_FOLLOWUP_DATE,
-  ID_FK
+  ID_FK,
+  ASSIST_OTHER_DESCR
 ) values(
-'UUID_ID',   -- ID,  TODO:
-'UUID_FIELD_PK',   -- FIELD_PK,  TODO:
-'UUID_FIELD_PK_FK',   -- FIELD_PK_FK,  TODO:
-'无症状',   -- OTHER_SYMPTOM_DESC,  TODO:
+	'UUID_ID',   -- ID,  TODO:
+	'UUID_FIELD_PK',   -- FIELD_PK,  TODO:
+	'UUID_FIELD_PK_FK',   -- FIELD_PK_FK,  TODO:
+	'无症状',   -- OTHER_SYMPTOM_DESC,  TODO:
 	120,   -- SBP,
 	80,   -- DBP,
 	161,   -- BODY_HEIGHT,
@@ -60,19 +61,19 @@ insert into t_dm_diabetfol_rec(
 	30,   -- ACTIVITY_FREQ,
 	300,   -- DAILY_EATING,
 	280,   -- NEXT_DAILY_EATING,
-	6.0,   -- FBS_VALUE,
-	11.3,   -- BS_2H_AF_EATING_VALUE,
+	5.9,   -- FBS_VALUE,
+	11.5,   -- BS_2H_AF_EATING_VALUE,
 	'搏动好',   -- INSTEP_ATPM_CD,
-	to_date('2013-04-04','yyyy-MM-dd'),   -- NEXT_FOLLOWUP_DATE,
-	'良好',   -- EMOTION_ADJUST_CD,      
+	to_date('2013-07-04','yyyy-MM-dd'),   -- NEXT_FOLLOWUP_DATE,
+	'良好',   -- EMOTION_ADJUST_CD,     
 	'良好',   -- COMPLIANCE_CD,  
 	'永乐店社区服务中心',   -- FOLLOWUP_ORG_CODE,
 	'无',   -- DRUG_SIDE_EFF_DESCR,
 	'薛楠',   -- FOLLOWUP_DOCTOR_NAME,
-	to_date('2013-01-04','yyyy-MM-dd'),   -- CUR_FOLLOWUP_DATE,
-	'UUID_ID_FK'   -- ID_FK
-)
-
+	to_date('2013-04-04','yyyy-MM-dd'),   -- CUR_FOLLOWUP_DATE, 
+	'UUID_ID_FK',   -- ID_FK
+	'目前血糖控制良好，体重仍超标'
+);
 
 insert into t_dm_diabetfol_rec_drug(
   ID,
@@ -84,14 +85,14 @@ insert into t_dm_diabetfol_rec_drug(
   DOSE_SINGLE,
   ID_FK
 ) values(
-  'UUID_ID',   --   ID,
-  'UUID_FIELD_PK',   --   FIELD_PK,
-  'UUID_FIELD_PK_FK',   --   FIELD_PK_FK,
-  to_date('2013-01-04','yyyy-MM-dd'),   --   CREATETIME,
-  '二甲双胍',   --   DRUG_NAME,
-  '3/日',   --   DRUG_USAGE,
-  500,   --   DOSE_SINGLE,
-  'UUID_ID_FK'   --   ID_FK
+	'diabet_rec_drug3',
+	'diebetfeldrug003',
+	'diabetfolrec003',
+  to_date('2012-10-26','yyyy-MM-dd'),
+	'二甲双胍',
+	'3/日',
+	500,
+	'diabet_rec3'
 )
 
 
