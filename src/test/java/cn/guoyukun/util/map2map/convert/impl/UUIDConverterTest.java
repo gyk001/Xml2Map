@@ -5,7 +5,12 @@ import junit.framework.Assert;
 import org.testng.annotations.Test;
 
 import cn.guoyukun.util.xml2map.convert.impl.UUIDConverter;
-
+/**
+ * 
+ * @author 郭玉昆(<a href="mailto:gyk001@gmail.com">gyk001@gmail.com</a>)
+ * @version 2013-12-24
+ *
+ */
 public class UUIDConverterTest {
 
 	UUIDConverter c = new UUIDConverter();

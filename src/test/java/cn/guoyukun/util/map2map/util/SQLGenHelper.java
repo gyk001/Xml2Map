@@ -2,12 +2,7 @@ package cn.guoyukun.util.map2map.util;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 import jodd.util.StringTemplateParser;
 
@@ -16,15 +11,10 @@ import org.jdom2.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import cn.guoyukun.util.xml2map.ConvertContext;
-import cn.guoyukun.util.xml2map.convert.ConverterHolder;
-import cn.guoyukun.util.xml2map.convert.impl.UUIDConverter;
 import cn.guoyukun.util.xml2map.rule.RuleGroup;
 import cn.guoyukun.util.xml2map.util.ConvertUtil;
-import cn.guoyukun.util.xml2map.util.LineTrimUtil;
 import cn.guoyukun.util.xml2map.util.RuleLoadUtil;
 import cn.guoyukun.util.xml2map.util.XmlLoadUtil;
 
@@ -34,22 +24,19 @@ import cn.guoyukun.util.xml2map.util.XmlLoadUtil;
  * @version Dec 4, 2013
  * 
  */
-public class SQLGen {
+public class SQLGenHelper {
 	// 日志对象
 	private static final Logger logger = LoggerFactory
-			.getLogger(SQLGen.class);
+			.getLogger(SQLGenHelper.class);
 	
-	@DataProvider(name = "test")
-	public Object[][] createData1() {
-		return new Object[][] {
-				{"demo0","0"},
-				{"demo1","1"},
-			};
-	}
+	
 
-	@Test(dataProvider="test")
-	private void doTestConvert(String xml, String type) throws Exception{
-		
+	public static void main(String[] args) throws Exception {
+		doTestConvert("demo0", "0");
+	}
+	
+	
+	private static void doTestConvert(String xml, String type) throws Exception{
 		Document doc = XmlLoadUtil.loadXmlFromResource("/sqlgen/" +xml+".xml");
 		Assert.assertNotNull(doc, "加载测试xml失败！");
 		ConvertContext ctx = new ConvertContext(doc);
@@ -69,15 +56,15 @@ public class SQLGen {
 	}
 	
 	
-	private String parseToSQL(String sqlTpl, Map<String, Object> params){
+	private static String parseToSQL(String sqlTpl, Map<String, Object> params){
 		StringTemplateParser stp = new StringTemplateParser();
 		String sql = stp.parse(sqlTpl,  StringTemplateParser.createMapMacroResolver(params));
 		logger.debug(sql);
 		return sql;
 	}
 	
-	private String load4String(String resource) throws IOException{
-		String sql = IOUtils.toString(SQLGen.class.getResourceAsStream(resource),Charset.forName("UTF-8"));
+	private static String load4String(String resource) throws IOException{
+		String sql = IOUtils.toString(SQLGenHelper.class.getResourceAsStream(resource),Charset.forName("UTF-8"));
 		return sql;
 	}
 }

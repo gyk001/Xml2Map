@@ -16,6 +16,7 @@ import cn.guoyukun.util.xml2map.decorator.DecoratorHolder;
 public class RegexItemDecorator implements Decorator{
 	public static final String TYPE="regex-item";
 	//日志对象
+	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(RegexItemDecorator.class);
 	private Decorator regex;
 	private Decorator item;

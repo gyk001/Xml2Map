@@ -1,7 +1,5 @@
 package cn.guoyukun.util.xml2map.util;
 
-import java.util.Arrays;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

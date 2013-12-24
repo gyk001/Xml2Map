@@ -12,8 +12,8 @@ import java.util.Map.Entry;
 
 import org.apache.commons.io.IOUtils;
 
-import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 /**
  * @author 郭玉昆(<a href="mailto:gyk001@gmail.com">gyk001@gmail.com</a>)
@@ -31,7 +31,6 @@ public class TestResourceLoadUtil {
 	 * @throws Exception
 	 */
 	public static Map<String,Object> loadTestTableData(String jsonFile) throws Exception{
-		@SuppressWarnings("serial")
 		Type type = new TypeToken<Map<String, Object>>(){}.getType();
 		String json = loadStringFromResource(jsonFile);
 		Map<String,Object> objColInfo = GSON.fromJson(json, type);
